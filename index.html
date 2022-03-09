@@ -6,69 +6,111 @@
 </head>
 <body>
 
-    <div>
-        <label for="categoria">Categoria: </label>
-        <select name="categoria" id="categoria">
-            <option value="administrador">Administrador</option>
-            <option value="gerente">Gerente</option>
-            <option value="funcionario"selected>Funcionario</option>
+    
+<!--Criando um formulário-->
+<!--Inicio do formulário-->
+        <div>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" size="70" required>
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" size="70" required>
+        </div>
+        <div>
+            <label for="idade">Idade: </label>
+            <input type="number" name="idade" id="idade" size="20" required>
+        </div>
+        <br/>
+<!--Fim do formulário-->
+
+
+             <div>
+                <label for="categoria">Categoria: </label>
+                <select name="categoria" id="categoria">
+                    <option value="administrador">Administrador</option>
+                    <option value="gerente">Gerente</option>
+                    <option value="funcionario"selected>Funcionario</option>
+                    
+                </select>
+            </div>
+            <!--Inicio da div cores-->
+            <div>
+                <label> Selecione as cores de sua escolha: </label>
+                <br/>
+                <input type="checkbox" name="blue" id="blue">
+                <label for="cores">Azul</label>
+                <br/>
+                <input type="checkbox" name="white" id="white">
+                <label for="cores">Branco</label>
+                <br/>
+                <input type="checkbox" name="red" id="red">
+                <label for="cores">Vermelho</label>
             
-        </select>
-    </div>
-    <!--Inicio da div cores-->
-    <div>
-        <label> Selecione as cores de sua escolha: </label>
+            </div>
+            <!--Fim da div cores-->
+        
+            <!--Inicio da div sexo-->
+            <div>
+            <br/>
+                <label> Sexo: </label>
+                <br/>
+                <input type="radio" name="sexo" id="sexo_m" value="m">
+                <label for="sexo_m"> Masculino</label>
+                <input type="radio" name="sexo" id="sexo_f" value="f">
+                <label for="sexo_f">Feminino</label>
+                <br/>
+            </div>
+            <!--Fim da div sexo-->
+        
+            <!--Inicio da div textarea-->
+            <div>
+                <label for="comentarios"></label>
+                <textarea name="comentarios";
+                id="comentarios";
+                    rows="14";
+                    cols="50";
+                    style="resize: none;"
+                ></textarea>
+            </div>
+            <!--Fim da div textarea-->
+        
+        
+            <div>
+                <input type="submit" value="Enviar"/>
+            </div>
+        
+            
+            <div>
+                <button type="submit" name="btn_comprar"value="Comprar">Comprar</button>/>
+            </div>
+        
+            <div>
+                <button>Limpar</button>
+            </div>
         <br/>
-        <input type="checkbox" name="blue" id="blue">
-        <label for="cores">Azul</label>
-        <br/>
-        <input type="checkbox" name="white" id="white">
-        <label for="cores">Branco</label>
-        <br/>
-        <input type="checkbox" name="red" id="red">
-        <label for="cores">Vermelho</label>
-    
-    </div>
-    <!--Fim da div cores-->
 
-    <!--Inicio da div sexo-->
-    <div>
-    <br/>
-        <label> Sexo: </label>
-        <br/>
-        <input type="radio" name="sexo" id="sexo_m" value="m">
-        <label for="sexo_m"> Masculino</label>
-        <input type="radio" name="sexo" id="sexo_f" value="f">
-        <label for="sexo_f">Feminino</label>
-        <br/>
-    </div>
-    <!--Fim da div sexo-->
 
-    <!--Inicio da div textarea-->
-    <div>
-        <label for="comentarios"></label>
-        <textarea name="comentarios";
-         id="comentarios";
-            rows="14";
-            cols="50";
-            style="resize: none;"
-        ></textarea>
-    </div>
-    <!--Fim da div textarea-->
-
-
-    <div>
-        <input type="submit" value="Enviar"/>
-    </div>
+    </form>
 
     
-    <div>
-        <button type="submit" name="btn_comprar"value="Comprar">Comprar</button>/>
-    </div>
+   
+<!--
+<div>
+        <h2>Meu primeiro formulário</h2>
+        <form>
+            <label>E-mail: </label>
+            <input type="email"/>
 
-    <div>
-        <button>Limpar</button>
+            <label>Senha: </label>
+            <input type="password"/>
+
+            <button type="submit">Login</button>
+
+
+        </form>
     </div>
+-->
 
 </body>
 </html>
